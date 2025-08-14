@@ -1,1 +1,33 @@
 # my-cpp-practise
+
+## oop.cpp
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A1
+{
+	int count;
+	public :
+		A1()
+		{
+			count = 5 ;
+		}
+		void operator ++()
+		{
+			count = ++count; 
+		}
+		void display()
+		{
+			cout<<"After overloading = "<<count;
+		}
+};
+
+int main()
+{
+	A1 obj;
+	++ obj;
+	obj.display ();
+}
+```
